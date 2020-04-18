@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewpage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Welcome to Login Page"
+        android:textColor="#111111"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nusname1"
+        android:layout_width="245dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewpage1" />
+
+    <EditText
+        android:id="@+id/npasswd1"
+        android:layout_width="245dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nusname1" />
+
+    <Button
+        android:id="@+id/ndone1"
+        android:layout_width="111dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="80dp"
+        android:text="Login"
+        app:layout_constraintBaseline_toBaselineOf="@+id/blogin1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/blogin1"
+        android:layout_width="111dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="80dp"
+        android:text="@android:string/cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ndone1"
+        app:layout_constraintTop_toBottomOf="@+id/npasswd1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:text="Not have account ?"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/newacc1"
+        app:layout_constraintEnd_toStartOf="@+id/newacc1"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/newacc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="45dp"
+        android:text="Creat account"
+        android:textAlignment="center"
+        android:textColor="#111111"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blogin1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
